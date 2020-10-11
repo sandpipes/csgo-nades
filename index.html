@@ -5,6 +5,14 @@
     <head>
         <meta charset="utf-8">
         <title>CSGO Nades</title>
+        <meta name="description" content="Learn your nades ♿">
+        
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Nades"/>
+        <meta property="og:description" content="Learn your nades ♿"/>
+        <meta property="og:url" content="https://cs.calibur.dev/"/>
+        <meta property="og:site_name" content="CSGO Nades"/>
+
         <link rel="icon" href="/icon.png">
         <meta property="og:image" content="/icon.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,6 +46,7 @@
             <h2>{{ i.name }}</h2>
             <div class="images-container video-deck">
                 <div class="grid row center-block" id="{{ i.name }}-row">
+                    <div class="grid-sizer"></div>
                 {%- for nade in i.nades -%}
                     <div class="col-sm-3 grid-item">
                         <a yt-id="{{ nade.link }}" data-fancybox data-caption="{{ nade.location }}" href="https://www.youtube.com/embed/{{ nade.link }}?enablejsapi=1">
@@ -62,7 +71,7 @@
         $elem.imagesLoaded( function() {
             $elem.masonry({
                 itemSelector: '.grid-item',
-                percentPosition: true
+                isFitWidth: true
             });
             $elem.fadeTo(200, 1);
             $('.grid-item .pic', $elem).each(function(n, img) {

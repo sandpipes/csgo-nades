@@ -6,7 +6,11 @@
 }
 
 #toc ul {
-    padding-left: 40px;
+    padding-left: 90px;
+}
+
+h2 {
+    padding-left: 50px;
 }
 
 @media (min-width: 768px) {
@@ -63,5 +67,15 @@ img.pic {
     margin-right: 15px;
     margin-left: 15px;
     margin-bottom: 25px;
-    width: 22%;
+
+    display: block;
+    width: 320px;
+
+    /* width: 22%; */
+}
+
+.grid-sizer {
+    display: block;
+    background: #fff;
+    width: 320px;
 }
