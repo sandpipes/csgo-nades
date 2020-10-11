@@ -1,0 +1,96 @@
+---
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSGO Nades</title>
+        <link rel="icon" href="/icon.png">
+        <meta property="og:image" content="/icon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/assets/css/milligram.min.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    </head>
+    <body>
+        <div class="head">
+            <h1>Nades</h1>
+        </div>
+
+        <section class="sections" id="toc">
+            <h2>Maps</h2>
+            <ul>
+                {%- for i in site.data.smokes -%}
+                <li><a href="#{{ i.name | downcase}}">{{ i.name }}</a></li>
+                {%- endfor -%}
+            </ul>
+        </section>
+
+        {%- for i in site.data.smokes -%}
+        <section class="sections" id="{{ i.name | downcase}}">
+            <h2>{{ i.name }}</h2>
+            <div class="images-container video-deck">
+                <div class="grid row center-block" id="{{ i.name }}-row">
+                {%- for nade in i.nades -%}
+                    <div class="col-sm-3 grid-item">
+                        <a yt-id="{{ nade.link }}" data-fancybox data-caption="{{ nade.location }}" href="https://www.youtube.com/embed/{{ nade.link }}?enablejsapi=1">
+                            <img class="pic" src="https://img.youtube.com/vi/{{ nade.link }}/mqdefault.jpg">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text">
+                                {{ nade.location }}
+                            </p>
+                        </div>
+                    </div>
+                {%- endfor -%}
+                </div>
+            </div>
+        </section>
+        {%- endfor -%}
+    </body>
+</html>
+<script>
+    $('.images-container').each( function(i, elem) {
+        var $elem = $(elem);
+        $elem.imagesLoaded( function() {
+            $elem.masonry({
+                itemSelector: '.grid-item',
+                percentPosition: true
+            });
+            $elem.fadeTo(200, 1);
+            $('.grid-item .pic', $elem).each(function(n, img) {
+                if (!img.complete) {
+                    $(img).on('load', function() {
+                        $(img).fadeTo(300,1);
+                    });
+                } else {
+                    $(img).fadeTo(300,1);
+                }
+            });
+    
+        });
+    });
+
+    $(window).resize(function(){
+        if(detector.outerWidth(true)!=curWidth){
+            curWidth = detector.outerWidth(true);
+            $wall.masonry( 'option', { columnWidth: curWidth });
+        }
+    });
+
+    $('[data-fancybox]').fancybox({
+        youtube: {
+            autoplay: 0,
+            hd: 1,
+            vq: 'hd1080'
+        }
+    });
+
+</script>
