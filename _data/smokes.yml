@@ -26,8 +26,14 @@
       link: s-wRFjEbv2U
     - location: Top Connector Smoke
       link: Z-QGaS8ACTI
+    - location: A Jungle Smoke
+      link: AKEVGR09N2M
+    - location: A Stairs Molly
+      link: soBQZw890Sc
     - location: A Bench Smoke
       link: 5RDpvZX4-iM
+    - location: B Left Cat Smoke
+      link: 1xH1jugC9ik
     - location: B Right Cat Smoke
       link: esL-T1PEyDI
     - location: B Market Window Smoke
@@ -41,8 +47,42 @@
 - name: Overpass
   nades:
     - location: A Bank Smoke
-      link: iMvogGjFpqM
+      link: RplWMvJrx9w
+    - location: A Site Center Smoke
+      link: EdVaNLflYmw
+    - location: A Truck Smoke
+      link: SQ3F_Sa_jbQ
+    - location: B Barrels Molly
+      link: lhqRoDCG3gw
+    - location: B Bridge Smoke
+      link: Juainkrn1YA
+    - location: B Cat Molly
+      link: -Hj6n3Ga78M
+    - location: B Heaven Smoke
+      link: qLHaKUZdX9U
+    - location: B Site Smoke
+      link: cYLepa4TaXg
+    - location: B Water Molly
+      link: DzYqYz3HhqU
 - name: Inferno
   nades:
     - location: Arch Smoke
       link: MxklNffcwHM
+    - location: B Coffins Smoke
+      link: -5reHub9U1I
+    - location: B Cross CT Smoke
+      link: blSXj-X4WrU
+    - location: B Dark Molly
+      link: EHDlXT84_6g
+    - location: B New Box Molly
+      link: O5gVvUXa71c
+    - location: Deep B From T Spawn Smoke
+      link: a9Nd7Lewc9s
+    - location: Top Banana Flash
+      link: cb6l2qiGArA
+    - location: Top Banana Smoke
+      link: W9OOJXcLAdM
+- name: Train
+  nades:
+    - location: A Bomb Train Left Smoke
+      link: nG_NIUCETMI
