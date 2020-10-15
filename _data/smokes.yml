@@ -44,6 +44,14 @@
       link: BwNX4fO7jiI
     - location: Connector Smoke
       link: hjYkt0ssXSg
+    - location: Deep Top Mid Smoke (CT Spawn)
+      link: s--NNUTM4o4
+    - location: Palace Pop Flash (Stairs)
+      link: ZcrIE66bMS0
+    - location: Under Balcony Molly 1 (Palace)
+      link: VA-KAgniKNY
+    - location: Under Balcony Molly 2 (Palace)
+      link: klJHwruF_uk
 - name: Overpass
   nades:
     - location: A Bank Smoke
@@ -66,8 +74,22 @@
       link: DzYqYz3HhqU
 - name: Inferno
   nades:
-    - location: Arch Smoke
+    - location: Arch Smoke 1
       link: MxklNffcwHM
+    - location: Arch Smoke 2
+      link: IFLAFz6SkL0
+    - location: Balcony Smoke (Halls)
+      link: h7Qqf7TgBwg
+    - location: Godflash (Halls)
+      link: mrwDiDzh96E
+    - location: Library Smoke
+      link: lSDTzTkX6C4
+    - location: A Long Smoke
+      link: oxPRJw2U91M
+    - location: A Moto Smoke
+      link: G3zBQQrEhBY
+    - location: A Short Smoke
+      link: EL8tf7i-arA
     - location: B Coffins Smoke
       link: -5reHub9U1I
     - location: B Cross CT Smoke
