@@ -106,5 +106,39 @@
       link: W9OOJXcLAdM
 - name: Train
   nades:
+    - location: A Site Red and Green Smoke
+      link: hTQAtKdHPag
+    - location: A3 (Ivy) Smoke
+      link: htBnDVLaMMc
     - location: A Bomb Train Left Smoke
       link: nG_NIUCETMI
+    - location: A Bomb Train Right Smoke
+      link: yl9w9UxMkQU
+    - location: Old Bomb Smoke
+      link: H5scKj2rT3M
+    - location: Connector (From Upper) Smoke
+      link: gNyuyw7Fhe4
+    - location: Popdog Molly
+      link: MCIUypdSH50
+    - location: Summit Molly
+      link: DjSLhsg9hAY
+    - location: Summit-Train Smoke
+      link: uP22H_Kib-I
+    - location: B Catwalk Smoke
+      link: hE-y5_v8Tqw
+- name: Nuke
+  nades:
+    - location: A Main Smoke
+      link: oRD0-LK1OqM
+    - location: Garage Smoke
+      link: oejpqRQUID8
+    - location: Heaven Smoke
+      link: uk__pF2FJr4
+    - location: Hut Roof Molly
+      link: 0BKAJUDXJDM
+    - location: Outside Smoke 1
+      link: SlKooF0vyQg
+    - location: Outside Smoke 2
+      link: XjUsu4fgir0
+    - location: Quick Outside (T) Smoke
+      link: fIGqMcp9HDk
